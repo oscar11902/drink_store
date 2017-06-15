@@ -61,6 +61,7 @@ public class Main {
                                     quit = false;
                                     break;
                                 case 1:
+                                    nq=false;
                                     break;
                                 default:
                             }

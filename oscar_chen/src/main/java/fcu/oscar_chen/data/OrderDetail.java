@@ -13,7 +13,7 @@ public class OrderDetail {
 		this.count = count;
 	}
 	public void display(){
-		System.out.println(drink.name+" "+ice+"分冰 "+sugar+"分糖 "+count+"杯");
+		System.out.println(drink.name+" "+ice+"分冰 "+sugar+"分糖 "+count+"杯\n");
 	}
 	public int getPrice(){
 		return drink.price*count;
