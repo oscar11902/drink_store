@@ -11,4 +11,14 @@ public class Order {
 		this.detail = detail;
 		createDate=new Date();
 	}
+	public void display(){
+		int sumcount=0,sumPrice=0;
+		System.out.println(createDate);
+		for (OrderDetail od:detail) {
+			sumcount+=od.getCount();
+			sumPrice+=od.getPrice();
+			od.display();
+		}
+		System.out.println("共"+sumcount+"杯，"+sumPrice+"元");
+	}
 }
